@@ -1,6 +1,7 @@
 import { Box, Container, CssBaseline, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
+import Typography from '@material-ui/core/Typography'
 import Autocomplete from '@material-ui/lab/Autocomplete'
 import React, { Fragment } from 'react'
 
@@ -54,9 +55,11 @@ export const Home: React.FC = () => {
           {/* <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar> */}
-          {/* <Typography component="h1" variant="h5">
-            Sign in
-          </Typography> */}
+          <Typography component="h1" variant="h1">
+            <span role="img" aria-label="Whisky glass image">
+              🥃
+            </span>
+          </Typography>
           <form className={classes.form} noValidate>
             <Autocomplete
               id="country-select-demo"
