@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { About } from './pages/About'
 import { Home } from './pages/Home'
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <Navbar /> */}
       <Switch>
         <Fragment>
@@ -15,7 +15,7 @@ const App: React.FC = () => {
           </div>
         </Fragment>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
